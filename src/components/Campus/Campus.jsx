@@ -4,7 +4,7 @@ const Campus = () => {
   return (
     <section className="campus">
       <h1>Our Campuses and Global Collaborations</h1>
-      <p>Experience world-class education at VIT's vibrant campuses and through global academic partnerships.</p>
+      <p>Experience world-class education at VIT&apos;s vibrant campuses and through global academic partnerships.</p>
       <div className="row">
         <div className="campus-col">
           <img src="/images/vit-ap-campus.jpg" alt="VIT-AP Campus" />

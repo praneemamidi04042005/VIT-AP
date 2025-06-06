@@ -1,8 +1,5 @@
 import "./Testimonials.css";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-
 const Testimonials = () => {
   return (
     <section className="testimonials">
@@ -20,12 +17,7 @@ const Testimonials = () => {
               truly sets it apart.&quot;
             </p>
             <h3>Priya Reddy</h3>
-            <div className="stars">
-              {[...Array(4)].map((_, i) => (
-                <FontAwesomeIcon key={i} icon={faStar} className="filled-star" />
-              ))}
-              <FontAwesomeIcon icon={faStar} className="empty-star" />
-            </div>
+            <div className="stars">★★★★☆</div>
           </div>
         </div>
 
@@ -38,11 +30,7 @@ const Testimonials = () => {
               a confident professional.&quot;
             </p>
             <h3>Rahul Varma</h3>
-            <div className="stars">
-              {[...Array(5)].map((_, i) => (
-                <FontAwesomeIcon key={i} icon={faStar} className="filled-star" />
-              ))}
-            </div>
+            <div className="stars">★★★★★</div>
           </div>
         </div>
       </div>

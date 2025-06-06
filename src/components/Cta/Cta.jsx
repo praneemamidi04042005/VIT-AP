@@ -4,7 +4,7 @@ const Cta = () => {
   return (
     <section className="cta">
       <h1>
-        Join VIT-AP’s Future-Ready Programs
+        Join VIT-AP&apos;s Future-Ready Programs
         <br />
         Apply Online From Anywhere in the World
       </h1>

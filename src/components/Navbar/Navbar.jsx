@@ -1,27 +1,12 @@
 import "./Navbar.css";
 
-import { useRef } from "react";
 import { Link } from "react-router-dom";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
+
 
 import logo from "/images/logo.png";
 
 const Navbar = () => {
-  const navLinkRef = useRef();
-
-  const showMenu = () => {
-    if (navLinkRef.current) {
-      navLinkRef.current.style.right = "0";
-    }
-  };
-
-  const hideMenu = () => {
-    if (navLinkRef.current) {
-      navLinkRef.current.style.right = "-200px";
-    }
-  };
 
   return (
     <nav>
@@ -29,8 +14,7 @@ const Navbar = () => {
         <img src={logo} alt="" />
       </Link>
 
-      <div className="nav-links" id="navLinks" ref={navLinkRef}>
-        <FontAwesomeIcon icon={faTimes} className="fas" onClick={hideMenu} />
+      <div className="nav-links" id="navLinks">
 
         <ul>
           <li>
@@ -51,7 +35,6 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <FontAwesomeIcon icon={faBars} className="fas" onClick={showMenu} />
     </nav>
   );
 };

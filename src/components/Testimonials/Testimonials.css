@@ -42,16 +42,8 @@
 
 .stars {
   display: flex;
-}
-
-.filled-star {
-  color: #f44336;
-}
-
-.empty-star {
-  color: transparent;
-  stroke: #f44336;
-  stroke-width: 1;
+  font-size: 1.2rem;
+  color: #f44336; /* Red colored stars (Unicode stars) */
 }
 
 /* Responsive styles for smaller screens */
